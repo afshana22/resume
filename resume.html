@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title></title>
+  </head>
+  <style type="text/css">
+    .main-content {
+      display: grid;
+      grid-template-columns: 300px 700px;
+      min-height: 1000px;
+    }
+    .right-section {
+      width: 90%;
+      grid-column: span 1 / span 2;
+    }
+    .left-section {
+      background-color: lightcyan;
+      grid-column: span 1;
+    }
+    .left-content {
+      padding: 1rem;
+    }
+    .profile-image {
+      display: block;
+      margin: auto;
+      border: 5px solid white;
+      width: 60%;
+      border-radius: 30%;
+    }
+    .name {
+      font-size: 1.2rem;
+      font-weight: 700;
+      text-align: center;
+      letter-spacing: 0.02px;
+      text-transform: uppercase;
+      padding: 0.8rem;
+    }
+    .designation {
+      font-size: 0.75rem;
+      padding: 1rem;
+      text-align: center;
+    }
+    .skills {
+      text-transform: uppercase;
+      font-size: 0.75rem;
+      text-align: center;
+      padding: 1rem 0.5rem;
+    }
+    .skill-name {
+      width: 0.65rem;
+      font-size: 0.65rem;
+      text-align: left;
+      padding-bottom: 0.5rem;
+    }
+    .progress-bar {
+      border: 1px solid white;
+      height: 4px;
+    }
+    .right-main-content {
+      padding: 2rem 3rem;
+    }
+    .right-title {
+      text-transform: uppercase;
+      font-size: 1.2rem;
+      font-weight: 700;
+      letter-spacing: 1px;
+      padding: 0.5rem;
+    }
+    /* @media screen {
+		
+	} */
+    @media only screen and (max-width: 674px) {
+      .main-content {
+        grid-template-columns: repeat(1, 1fr);
+      }
+    }
+  </style>
+  <body>
+    <div class="main-content">
+      <section class="left-section">
+        <div class="left-content">
+          <img src="portfolio/85779.jpg" class="profile-image" />
+          <p class="name">Afshana Zaman</p>
+          <p class="designation">Full Stack Developer</p>
+          <p class="description">
+            im very passionate and dedicated to my work. With 1 year 6 months
+            experience as a professional full stack developer. I have acquired
+            the skills necessary to build great and premium websites
+          </p>
+          <div class="contact-item">
+            <a
+              href="https://www.linkedin.com/in/afshana-zaman-786887193/"
+              class="icon"
+            >
+              <i class="fa fa-linkedin text-blue"></i>
+            </a>
+            <a href="https://github.com/afshana22/portfolio.git" class="icon">
+              <i class="fa fa-github text-white"></i>
+            </a>
+          </div>
+          <p class="skills">Skills:</p>
+          <p class="skill-name">
+            Reactjs , ReactNative ,Laravel ,Html ,Css ,JavaScript
+          </p>
+          <p class="progress-bar"></p>
+        </div>
+      </section>
+      <section class="right-section">
+        <div class="right-main-content">
+          <p class="right-title">About Me</p>
+		  <p >
+			I have born and bought up in guwahati , Assam. Im very passionate and dedicated to my work. With 1 year 6 months
+            experience as a professional full stack developer. I have acquired
+            the skills necessary to build great and premium websites
+		  </p>
+          <p class="right-title">Education</p>
+		  <p>
+			1- 10 : North Easy Academy 
+			11- 12 : Swadeshi Academy
+			Graduation : Btech in Computer Science and Engineering(Regional institute of Science and Technology)
+
+		  </p>
+          <p class="right-title">Experience</p>
+		  <p>
+			  1.5 years of experience in Reactjs , ReactNative.
+		  </p>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
